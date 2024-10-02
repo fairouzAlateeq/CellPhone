@@ -1,18 +1,18 @@
 package com.ps;
 
 public class CellPhone {
-    int serialNumber = 0;
-    String model = "";
-    String carrier = "";
-    String phoneNumber = "";
-    String owner = "";
+    int serialNumber;
+    String model;
+    String carrier;
+    String phoneNumber;
+    String owner;
 
     public CellPhone() {
-        this.serialNumber = serialNumber;
-        this.model = model;
-        this.carrier = carrier;
-        this.phoneNumber = phoneNumber;
-        this.owner = owner;
+        this.serialNumber = 0;
+        this.model = "";
+        this.carrier = "";
+        this.phoneNumber = "";
+        this.owner = "";
     }
 
     public String getModel() {
@@ -55,8 +55,7 @@ public class CellPhone {
         this.owner = ownerName;
     }
 
-    public class CellPhoneApplication {
-
+    public static class CellPhoneApplication{
         public static void main(String[] args) {
             CellPhone cellphoney = new CellPhone();
             cellphoney.setSerialNumber(4554653);
@@ -65,7 +64,7 @@ public class CellPhone {
             cellphoney.setPhoneNumber("+123456789");
             cellphoney.setOwner("hdhdvlfk");
 
-            System.out.println("Here are the info:\\n " + "Serial is: " + cellphoney.getSerialNumber() + ", " + cellphoney.getCarrier()  +", "+ cellphoney.getPhoneNumber());
+            System.out.println("Here are the info:\\n " + "Serial is: " + cellphoney.getSerialNumber() + ", " + cellphoney.getCarrier()  +", "+ cellphoney.getPhoneNumber() +cellphoney.getModel() + " " + cellphoney.getOwner());
         }
     }
 }
